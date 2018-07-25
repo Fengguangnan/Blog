@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[css属性:列表list]]></title>
+    <url>%2FBlog%2F2018%2F07%2F25%2Flist%2F</url>
+    <content type="text"><![CDATA[列表 list给 li 或者 display:list-item 的元素设置样式 list-style复合属性list-style：&lt;&#39; list-style-type &#39;&gt; || &lt;&#39; list-style-position &#39;&gt; || &lt;&#39; list-style-image &#39;&gt; list-style-type设置列表样式,取值 disc：实心圆(CSS1) circle：空心圆(CSS1) square：实心方块(CSS1) decimal：阿拉伯数字(CSS1) lower-roman：小写罗马数字(CSS1) upper-roman：大写罗马数字(CSS1) lower-alpha：小写英文字母(CSS1) upper-alpha：大写英文字母(CSS1) none：不使用项目符号(CSS1) armenian：传统的亚美尼亚数字(CSS2) cjk-ideographic：浅白的表意数字(CSS2) georgian：传统的乔治数字(CSS2) lower-greek：基本的希腊小写字母(CSS2) hebrew：传统的希伯莱数字(CSS2) hiragana：日文平假名字符(CSS2) hiragana-iroha：日文平假名序号(CSS2) katakana：日文片假名字符(CSS2) katakana-iroha：日文片假名序号(CSS2) lower-latin：小写拉丁字母(CSS2) upper-latin：大写拉丁字母(CSS2) 仅当list-style-image属性为none或指定图像不可用时才生效 See the Pen list-type by scliuyang (@scliuyang) on CodePen. list-style-image设置样式为图片，取值 none:不指定图像，默认内容标记将被 &lt;’ list-style-type ‘&gt; 代替。 url:使用绝对或相对地址指定列表项标记图像。如果图像地址无效，默认内容标记将被 &lt;’ list-style-type ‘&gt; 代替。 See the Pen list-img by scliuyang (@scliuyang) on CodePen. list-style-position设置或检索作为对象的列表项标记如何根据文本排列。取值 outside: 列表项目标记放置在文本以外，且环绕文本不根据标记对齐 inside: 列表项目标记放置在文本以内，且环绕文本根据标记对齐 See the Pen list-position by scliuyang (@scliuyang) on CodePen.]]></content>
+      <categories>
+        <category>css basic</category>
+      </categories>
+      <tags>
+        <tag>css基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css属性:position]]></title>
+    <url>%2FBlog%2F2018%2F07%2F25%2Fpositions%2F</url>
+    <content type="text"><![CDATA[postion用于指定一个元素在文档中的定位方式 使用语法支持属性static | relative | absolute | fixed | sticky,其中默认值为static注意，position 属性只针对display不为table-column-group | table-column的元素生效 static默认值,left、top、bottom、right四个定位属性不会生效 relative对象遵循常规流，并且参照自身在常规流中的位置通过top，right，bottom，left这4个定位偏移属性进行偏移时不会影响常规流中的任何元素。 See the Pen position_relative by scliuyang (@scliuyang) on CodePen. absolute对象脱离常规流，此时偏移属性参照的是离自身最近的定位祖先元素，如果没有定位的祖先元素(或者说祖先元素都是position:static)，则一直回溯到window也就是整个窗口元素。盒子的偏移位置不影响常规流中的任何元素，其margin不与其他任何margin折叠(这里是由于创建了BFC，块级格式化上下文导致的，推荐阅读深入理解BFC和Margin Collapse)。他跟relative最大的区别就是脱离文档流，也就是说相邻元素会无视并占据它所在的位置 See the Pen position_absolute by scliuyang (@scliuyang) on CodePen. fixed与absolute一致，但偏移定位是以窗口为参考。当出现滚动条时，对象不会随着滚动。 sticky对象在常态时遵循常规流。它就像是relative和fixed的合体，当在屏幕中时按常规流排版，当卷动到屏幕外时则表现如fixed。该属性的表现是现实中你见到的吸附效果 See the Pen position_sticky by scliuyang (@scliuyang) on CodePen. 不过这属性兼容性不咋的 定位属性top/bottom支持属性auto | &lt;length&gt; | &lt;percentage&gt;,默认值为auto,仅在position非static时生效 auto：无特殊定位，根据HTML定位规则在文档流中分配 ：用长度值来定义距离顶部的偏移量。可以为负值。 ：用百分比来定义距离顶部的偏移量。百分比参照包含块的高度。可以为负值。 在relative时,auto计算值为0,如果top和bottom其中一个为auto，则auto相当于另一个的负值，即top = -bottom；如果top和bottom的值都不为auto，则忽略bottom。在absolute时,auto计算为元素的正常文档流位置,如果top和bottom都设值会设置元素的高度，相当于离包含块的顶部和底部多少距离 See the Pen absolute_top_bttom by scliuyang (@scliuyang) on CodePen. left/right和top/bottom基本一致，只是percentage计算参照的是包含块的宽度 demo水平垂直居中 See the Pen 水平垂直居中 by scliuyang (@scliuyang) on CodePen. clip(被废弃，clip-path取代) rect(|auto |auto |auto |auto)：依据上-右-下-左的顺序提供自对象左上角为(0,0)坐标计算的四个偏移数值，其中任一数值都可用auto替换，即此边不剪切。必须设置absolute或者fixed才会生效，没有clip-path好用 See the Pen clip by scliuyang (@scliuyang) on CodePen.]]></content>
+      <categories>
+        <category>css basic</category>
+      </categories>
+      <tags>
+        <tag>css基础</tag>
+      </tags>
+  </entry>
+</search>
